@@ -1,0 +1,6 @@
+id=mali_r38p1_vk13
+name=Mali r38p1 DDK (GLES render engine)
+version=v6-gles
+versionCode=2025110805
+author=Mix-Kernel
+description=r38p1 GLES/Vulkan 64+32bit driver + libgpudshim. Keeps the stock Vulkan 1.1 feature declaration so SurfaceFlinger stays on the SkiaGL render engine.  Includes the r38p1 vendor EGL config properties (ro.vendor.arm.egl.configs.*).

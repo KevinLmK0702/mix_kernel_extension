@@ -1,0 +1,6 @@
+id=mali_r38p1_vk13
+name=Mali r38p1 DDK + Vulkan 1.3 (SurfaceFlinger on SkiaVK)
+version=v6-vulkan
+versionCode=2025110805
+author=Mix-Kernel
+description=r38p1 GLES/Vulkan 64+32bit, r38p1 vulkan.mali.so ICD, libgpudshim, Vulkan 1.3.0 feature declaration. Adds the Vulkan ICD, which makes SurfaceFlinger pick the Skia Vulkan render engine. Includes the r38p1 vendor EGL config properties (ro.vendor.arm.egl.configs.*).
