@@ -1,0 +1,25 @@
+diff --git a/arch/arm64/configs/evergo_defconfig b/arch/arm64/configs/evergo_defconfig
+index ac0d198803f8..a4d6ff9821b5 100644
+--- a/arch/arm64/configs/evergo_defconfig
++++ b/arch/arm64/configs/evergo_defconfig
+@@ -5700,4 +5700,17 @@ CONFIG_VFIO_PCI=y
+ CONFIG_VFIO_MDEV=y
+ CONFIG_VFIO_MDEV_DEVICE=y
+ CONFIG_S390_CCW_IOMMU=y
+-CONFIG_S390_AP_IOMMU=y
+\ No newline at end of file
++CONFIG_S390_AP_IOMMU=y
++
++# BakaSU and SUSFS Configurations 
++CONFIG_KSU=y
++CONFIG_KSU_SUSFS=y
++CONFIG_KSU_SUSFS_SUS_PATH=y
++CONFIG_KSU_SUSFS_SUS_MOUNT=y
++CONFIG_KSU_SUSFS_SUS_KSTAT=y
++CONFIG_KSU_SUSFS_SPOOF_UNAME=y
++CONFIG_KSU_SUSFS_ENABLE_LOG=y
++CONFIG_KSU_SUSFS_HIDE_KSU_SUSFS_SYMBOLS=y
++CONFIG_KSU_SUSFS_SPOOF_CMDLINE_OR_BOOTCONFIG=y
++CONFIG_KSU_SUSFS_OPEN_REDIRECT=y
++CONFIG_KSU_SUSFS_SUS_MAP=y
+\ No newline at end of file
