@@ -4319,3 +4319,20 @@ index 4e9d4893e67c..d8c79f7369e4 100644
  	BUG_ON(!tclass || tclass >= ARRAY_SIZE(secclass_map));
  	audit_log_format(ab, " tclass=%s", secclass_map[tclass-1].name);
  }
+diff --git a/fs/mount.h b/fs/mount.h
+index f39bc9da4d73..ce113b0af1d2 100644
+--- a/fs/mount.h
++++ b/fs/mount.h
+@@ -1,4 +1,6 @@
+ /* SPDX-License-Identifier: GPL-2.0 */
++#ifndef _FS_MOUNT_H
++#define _FS_MOUNT_H
+ #include <linux/mount.h>
+ #include <linux/seq_file.h>
+ #include <linux/poll.h>
+@@ -146,3 +148,5 @@ static inline bool is_local_mountpoint(struct dentry *dentry)
+ 
+ 	return __is_local_mountpoint(dentry);
+ }
++
++#endif /* _FS_MOUNT_H */
